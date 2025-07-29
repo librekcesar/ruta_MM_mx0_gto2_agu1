@@ -47,11 +47,34 @@
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         z-index: 1000;
     }
+
+    #google-maps-button {
+    position: absolute;
+    top: 200px; /*ajustar para que no choque con los otros elementos*/
+    right: 20px;
+    background-color: #4285F4;
+    color: rgb(235, 232, 213);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 1000; /* Asegura que esté por encima del mapa */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+    }
+
+    #google-maps-button:hover {
+        background-color: #104396; /* Un azul ligeramente más oscuro al pasar el mouse */
+    }    
     </style>
 </head>
 <body>
     <div id="map-title"> Ruta MX0-GTO2-AGU1</div>
     <div id="map"></div>
+    <a href="https://www.google.com/maps/dir/MexiquenseParks,+De+las+Torres+MZ+002,+Sin+Nombre,+Fuentes+del+Valle,+M%C3%A9x./5934%2B2R4,+Le%C3%B3n+de+los+Aldama,+Gto./Carmen+de+Luna+de+Sevilla+1509,+Jos%C3%A9+Guadalupe+Peralta+G%C3%A1mez,+20196+Aguascalientes,+Ags./@20.7196648,-103.325372,834108m/data=!3m2!1e3!4b1!4m20!4m19!1m5!1m1!1s0x85d1f4346f38af3d:0xba3ec842d93d553!2m2!1d-99.1422395!2d19.6415736!1m5!1m1!1s0x842bbeffd6e6e721:0x34c3e2734d17499b!2m2!1d-101.6429219!2d21.1525125!1m5!1m1!1s0x8429f218171af297:0xea4bea965697b702!2m2!1d-102.2330488!2d21.8641428!3e0!5m1!1e3?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" id="google-maps-button">
+        Ver en Google Maps
+    </a>
     <div id="map-legend" class="legend">
         <h4>Leyenda</h4>
         <div><span style="background-color: #d8180c; width: 20px; height: 20px; display: inline-block; border-radius: 50%;"></span> Nivel de riesgo de ruta (Alto)</div>
